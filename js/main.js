@@ -9,10 +9,12 @@ const renderCategories = () => {
   const container = document.getElementById('categories-grid');
   if (!container) return;
 
+  const palette = ['category-card--blue', 'category-card--purple', 'category-card--amber', 'category-card--cyan'];
+
   container.innerHTML = categories
-    .map((category) => `
+    .map((category, index) => `
       <div class="col-md-3 col-sm-6">
-        <div class="card p-4 h-100 border-0 shadow-sm">
+        <div class="category-card ${palette[index % palette.length]} p-4 h-100">
           <div class="d-flex align-items-center justify-content-between mb-3">
             <div class="hero-icon"><i class="bi ${category.icon}"></i></div>
             <span class="badge-soft">${category.count} items</span>
@@ -32,8 +34,14 @@ const renderEssayCards = (items, targetId) => {
   container.innerHTML = items
     .map((essay) => `
       <div class="col-lg-4 col-md-6">
-        <article class="card essay-card h-100 border-0 shadow-sm">
-          <img src="${essay.thumbnail}" loading="lazy" alt="${essay.title}" />
+        <article class="essay-card h-100">
+          <div class="essay-card-media">
+            <img src="${essay.thumbnail}" loading="lazy" alt="${essay.title}" />
+            <div class="essay-card-overlay">
+              <span class="pill pill--primary">${essay.category}</span>
+              <span class="pill pill--neutral">${essay.readingTime}</span>
+            </div>
+          </div>
           <div class="card-body">
             <div class="essay-meta">
               <span><i class="bi bi-folder2-open me-1"></i>${essay.category}</span>
@@ -42,7 +50,7 @@ const renderEssayCards = (items, targetId) => {
             <h3 class="h5 mb-1">${essay.title}</h3>
             <p class="text-muted mb-2">${essay.description}</p>
             <div class="d-flex flex-wrap gap-2 mb-3">
-              ${essay.keywords.slice(0, 3).map((keyword) => `<span class="badge-soft">${keyword}</span>`).join('')}
+              ${essay.keywords.slice(0, 3).map((keyword) => `<span class="badge-soft badge-soft--purple">${keyword}</span>`).join('')}
             </div>
             <a class="btn btn-outline-primary rounded-pill mt-auto" href="/essay.html?slug=${essay.slug}">Read more</a>
           </div>
@@ -106,8 +114,14 @@ const renderEssaysPage = () => {
     cardsContainer.innerHTML = visible.length
       ? visible.map((essay) => `
           <div class="col-lg-4 col-md-6">
-            <article class="card essay-card h-100 border-0 shadow-sm">
-              <img src="${essay.thumbnail}" loading="lazy" alt="${essay.title}" />
+            <article class="essay-card h-100">
+              <div class="essay-card-media">
+                <img src="${essay.thumbnail}" loading="lazy" alt="${essay.title}" />
+                <div class="essay-card-overlay">
+                  <span class="pill pill--primary">${essay.category}</span>
+                  <span class="pill pill--neutral">${essay.readingTime}</span>
+                </div>
+              </div>
               <div class="card-body">
                 <div class="essay-meta">
                   <span><i class="bi bi-folder2-open me-1"></i>${essay.category}</span>
@@ -116,7 +130,7 @@ const renderEssaysPage = () => {
                 <h3 class="h5 mb-1">${essay.title}</h3>
                 <p class="text-muted mb-2">${essay.description}</p>
                 <div class="d-flex flex-wrap gap-2 mb-3">
-                  ${essay.keywords.slice(0, 3).map((keyword) => `<span class="badge-soft">${keyword}</span>`).join('')}
+                  ${essay.keywords.slice(0, 3).map((keyword) => `<span class="badge-soft badge-soft--purple">${keyword}</span>`).join('')}
                 </div>
                 <a class="btn btn-outline-primary rounded-pill mt-auto" href="/essay.html?slug=${essay.slug}">Read more</a>
               </div>
