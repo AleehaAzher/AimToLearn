@@ -355,6 +355,34 @@ html[data-bs-theme="dark"] .navbar {
   background: linear-gradient(145deg, rgba(238, 252, 255, 0.98), rgba(255, 255, 255, 1));
 }
 
+.featured-essays-row {
+  align-items: stretch;
+}
+
+.featured-essays-row > [class*='col'] {
+  display: flex;
+}
+
+.featured-essays-row .essay-card {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .featured-essays-row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .featured-essays-row > [class*='col'] {
+    flex: 0 0 min(88%, 320px);
+    max-width: min(88%, 320px);
+    scroll-snap-align: start;
+  }
+}
+
 .essay-card {
   border-radius: 1.35rem;
   overflow: hidden;

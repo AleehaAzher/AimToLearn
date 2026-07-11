@@ -27,7 +27,17 @@ const renderCategories = () => {
     .join('');
 };
 
-const renderEssayCards = (items, targetId) => {
+const getEssayBadge = (essay) => {
+  const updated = new Date(essay.lastUpdated);
+  const isRecent = !Number.isNaN(updated.getTime()) && (Date.now() - updated.getTime()) <= 30 * 24 * 60 * 60 * 1000;
+
+  if (essay.featured && isRecent) return 'Popular';
+  if (essay.featured) return 'Popular';
+  if (isRecent) return 'Recently Updated';
+  return 'New';
+};
+
+const renderEssayCards = (items, targetId, showBadge = false) => {
   const container = document.getElementById(targetId);
   if (!container) return;
 
@@ -39,7 +49,7 @@ const renderEssayCards = (items, targetId) => {
             <img src="${essay.thumbnail}" loading="lazy" alt="${essay.title}" />
             <div class="essay-card-overlay">
               <span class="pill pill--primary">${essay.category}</span>
-              <span class="pill pill--neutral">${essay.readingTime}</span>
+              ${showBadge ? `<span class="pill pill--neutral">${getEssayBadge(essay)}</span>` : `<span class="pill pill--neutral">${essay.readingTime}</span>`}
             </div>
           </div>
           <div class="card-body">
@@ -61,13 +71,8 @@ const renderEssayCards = (items, targetId) => {
 };
 
 const renderFeaturedEssays = () => {
-  const featured = essaysData.filter((essay) => essay.featured);
-  renderEssayCards(featured, 'featured-essays');
-};
-
-const renderLatestEssays = () => {
-  const latest = [...essaysData].slice(0, 3);
-  renderEssayCards(latest, 'latest-essays');
+  const featured = essaysData.filter((essay) => essay.featured).slice(0, 6);
+  renderEssayCards(featured, 'featured-essays', true);
 };
 
 const renderEssaysPage = () => {
@@ -300,7 +305,6 @@ const renderEssayDetail = () => {
 document.addEventListener('DOMContentLoaded', () => {
   renderCategories();
   renderFeaturedEssays();
-  renderLatestEssays();
   renderEssaysPage();
   renderEssayDetail();
 });
