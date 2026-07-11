@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIM TO LEARN | Essays and Study Resources</title>
+    <meta
+      name="description"
+      content="AIM TO LEARN offers clear essays, study notes, and downloadable learning resources for students, parents, and teachers."
+    />
+    <meta name="theme-color" content="#5b5cf6" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="AIM TO LEARN | Essays and Study Resources" />
+    <meta property="og:description" content="Explore clear essays, study resources, and downloadable learning materials for school and revision." />
+    <meta property="og:image" content="/images/aimtolearnlogo.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AIM TO LEARN | Essays and Study Resources" />
+    <meta name="twitter:description" content="Explore clear essays, study resources, and downloadable learning materials for school and revision." />
+    <meta name="twitter:image" content="/images/aimtolearnlogo.jpeg" />
+    <link rel="canonical" href="https://aimtolearn.netlify.app/" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "AIM TO LEARN",
+        "url": "https://aimtolearn.netlify.app",
+        "logo": "https://aimtolearn.netlify.app/images/aimtolearnlogo.jpeg",
+        "description": "Educational website with essays and study resources for students, parents, and teachers",
+        "sameAs": ["https://youtube.com"],
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "Global"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div id="site-nav"></div>
+
+    <main id="main-content" role="main">
+      <section class="hero-section py-5 py-lg-6">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7">
+              <div class="badge-soft mb-3">Free Study Support</div>
+              <h1 class="display-4 fw-bold mb-4">Find clear essays and study notes that support school learning.</h1>
+              <p class="lead text-muted mb-4">
+                AIM TO LEARN brings together easy-to-read essays, school-friendly notes, and downloadable PDF resources for students and teachers.
+              </p>
+              <div class="d-flex flex-wrap gap-3">
+                <a class="btn btn-primary btn-lg rounded-pill px-4" href="/essays.html">Explore Essays</a>
+                <a class="btn btn-outline-secondary btn-lg rounded-pill px-4" href="#faq">See FAQs</a>
+              </div>
+              <div class="mt-4 d-flex gap-4 flex-wrap text-muted small">
+                <span><i class="bi bi-check2-circle me-2"></i>Easy-to-read essays</span>
+                <span><i class="bi bi-check2-circle me-2"></i>Exam preparation support</span>
+                <span><i class="bi bi-check2-circle me-2"></i>Downloadable PDF notes</span>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="card hero-card p-4 shadow-sm">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                  <div>
+                    <p class="text-muted small mb-1">Featured collection</p>
+                    <h2 class="h4 mb-0">English Essays</h2>
+                  </div>
+                  <div class="hero-icon"><i class="bi bi-mortarboard-fill"></i></div>
+                </div>
+                <ul class="list-unstyled mb-0">
+                  <li class="d-flex gap-3 mb-3"><i class="bi bi-journal-text"></i><span>Essay topics that support school writing and homework.</span></li>
+                  <li class="d-flex gap-3 mb-3"><i class="bi bi-download"></i><span>PDF files ready to download and print.</span></li>
+                  <li class="d-flex gap-3"><i class="bi bi-stars"></i><span>Helpful for classwork, revision, and exam practice.</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container py-5">
+        <div class="section-heading d-flex justify-content-between align-items-center mb-4">
+          <div>
+            <p class="text-uppercase small fw-semibold text-primary mb-1">Categories</p>
+            <h2 class="h3 mb-0">Find the right essay for school</h2>
+          </div>
+          <a href="/essays.html" class="btn btn-link text-decoration-none">View all essays</a>
+        </div>
+        <div class="row g-4" id="categories-grid"></div>
+      </section>
+
+      <section class="container py-5">
+        <div class="section-heading d-flex justify-content-between align-items-center mb-4">
+          <div>
+            <p class="text-uppercase small fw-semibold text-primary mb-1">Popular picks</p>
+            <h2 class="h3 mb-0">Most loved essays</h2>
+          </div>
+          <a href="/essays.html" class="btn btn-link text-decoration-none">Browse more</a>
+        </div>
+        <div class="row g-4" id="featured-essays"></div>
+      </section>
+
+      <section class="container py-5">
+        <div class="section-heading d-flex justify-content-between align-items-center mb-4">
+          <div>
+            <p class="text-uppercase small fw-semibold text-primary mb-1">Latest uploads</p>
+            <h2 class="h3 mb-0">Fresh resources for your study routine</h2>
+          </div>
+        </div>
+        <div class="row g-4" id="latest-essays"></div>
+      </section>
+
+      <section class="container py-5">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <div class="stats-grid">
+              <div class="stat-card">
+                <h3>2+</h3>
+                <p>Exam-ready essays</p>
+              </div>
+              <div class="stat-card">
+                <h3>100%</h3>
+                <p>Free PDF downloads</p>
+              </div>
+              <div class="stat-card">
+                <h3>24/7</h3>
+                <p>Simple reading anytime</p>
+              </div>
+              <div class="stat-card">
+                <h3>Fresh</h3>
+                <p>Regularly updated content</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card border-0 shadow-sm p-4">
+              <p class="text-uppercase small fw-semibold text-primary mb-2">Why students use AIM TO LEARN</p>
+              <h2 class="h3 mb-3">Helpful essays, clear writing, and easy downloads for everyday learning.</h2>
+              <p class="text-muted mb-0">
+                AIM TO LEARN gives students reliable essays, organised content, and useful study material that is easy to read and simple to download for revision and homework.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container py-5" id="faq">
+        <div class="section-heading mb-4">
+          <p class="text-uppercase small fw-semibold text-primary mb-1">Frequently asked</p>
+          <h2 class="h3 mb-0">Everything you need to know</h2>
+        </div>
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne">How can I download an essay?</button>
+            </h2>
+            <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Open any essay page and click the Download PDF button to save the file for reading or printing.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo">Are these essays free?</button>
+            </h2>
+            <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Yes. AIM TO LEARN provides free educational resources for students, parents, and teachers to use for learning and revision.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree">Can I use these essays for school assignments?</button>
+            </h2>
+            <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">These essays are meant to support study and writing practice. Please use them responsibly and check your school’s rules before submitting them as your own work.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour">Are new essays added regularly?</button>
+            </h2>
+            <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Yes. New learning materials are added over time so students can find fresh examples and study support.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFive">Can I print the PDFs?</button>
+            </h2>
+            <div id="faqFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Yes. The PDF files are designed to be easy to open, download, and print for study or classroom use.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqSix">How do I contact AIM TO LEARN?</button>
+            </h2>
+            <div id="faqSix" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">You can contact us through the contact section on this website or by email at supportaimtolearn@gmail.com.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container py-5">
+        <div class="cta-card p-5 text-center">
+          <p class="text-uppercase small fw-semibold text-primary mb-2">Ready to begin</p>
+          <h2 class="h3 mb-3">Start learning with high-quality essays and free PDF downloads.</h2>
+          <a class="btn btn-primary btn-lg rounded-pill px-4" href="/essays.html">Start exploring</a>
+        </div>
+      </section>
+
+      <section id="about" class="container py-5">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <h2 class="h3 fw-bold mb-3">About AIM TO LEARN</h2>
+            <p class="text-muted mb-0">AIM TO LEARN offers clear essays, helpful study notes, and download-ready materials designed to support learners, parents, and teachers in a simple and accessible way.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="container py-5">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <h2 class="h3 fw-bold mb-3">Contact</h2>
+            <p class="text-muted mb-0">Need help finding an essay or downloading a PDF? Reach out at <a href="mailto:support@aimtolearn@gmail.com">support@aimtolearn@gmail.com</a> for assistance.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/data/essays.js"></script>
+    <script src="/js/components.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

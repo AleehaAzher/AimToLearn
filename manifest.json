@@ -1,0 +1,15 @@
+{
+  "name": "AIM TO LEARN",
+  "short_name": "AimToLearn",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#f7f8ff",
+  "theme_color": "#5b5cf6",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

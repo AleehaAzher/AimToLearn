@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Essay placeholder illustration">
+  <rect width="800" height="500" rx="32" fill="#f5f7ff"/>
+  <rect x="80" y="90" width="640" height="320" rx="24" fill="#ffffff" stroke="#dfe6ff" stroke-width="3"/>
+  <rect x="130" y="150" width="180" height="18" rx="9" fill="#5b5cf6"/>
+  <rect x="130" y="190" width="300" height="16" rx="8" fill="#c9d0ff"/>
+  <rect x="130" y="220" width="260" height="16" rx="8" fill="#e4e8ff"/>
+  <rect x="130" y="260" width="340" height="16" rx="8" fill="#e4e8ff"/>
+  <rect x="130" y="300" width="220" height="16" rx="8" fill="#e4e8ff"/>
+</svg>
