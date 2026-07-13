@@ -174,5 +174,37 @@ const essaysData = [
     thumbnail: '/images/essay-placeholder.svg',
     pdf: 'downloads/health.pdf',
     keywords: ['health', 'healthy lifestyle', 'fitness', 'well-being']
+},
+{
+    id: 12,
+    title: 'My House Essay',
+    slug: 'my-house',
+    category: 'Essays',
+    description: 'A descriptive essay about the comfort, beauty, and importance of my house as a place of love, peace, and family.',
+    author: 'AIM TO LEARN',
+    readingTime: '5 min read',
+    featured: true,
+    quotations: true,
+    difficulty: 'Intermediate',
+    lastUpdated: '2026-07-11',
+    thumbnail: '/images/essay-placeholder.svg',
+    pdf: 'downloads/my-house.pdf',
+    keywords: ['my house', 'home', 'family', 'living place']
+},
+{
+    id: 13,
+    title: 'A Hockey Match Essay',
+    slug: 'hockey-match',
+    category: 'Essays',
+    description: 'A lively essay describing the excitement, teamwork, sportsmanship, and memorable moments of a thrilling hockey match.',
+    author: 'AIM TO LEARN',
+    readingTime: '5 min read',
+    featured: true,
+    quotations: true,
+    difficulty: 'Intermediate',
+    lastUpdated: '2026-07-11',
+    thumbnail: '/images/essay-placeholder.svg',
+    pdf: 'downloads/a-hockey-match.pdf',
+    keywords: ['hockey', 'hockey match', 'sports', 'teamwork']
 }
 ];
