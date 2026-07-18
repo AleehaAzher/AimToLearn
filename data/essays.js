@@ -206,5 +206,37 @@ const essaysData = [
     thumbnail: '/images/essay-placeholder.svg',
     pdf: 'downloads/a-hockey-match.pdf',
     keywords: ['hockey', 'hockey match', 'sports', 'teamwork']
+},
+{
+    id: 14,
+    title: 'My First Day at School Essay',
+    slug: 'my-first-day-at-school',
+    category: 'Essays',
+    description: 'A heartwarming essay describing the excitement, nervousness, and unforgettable experiences of a student’s first day at school.',
+    author: 'AIM TO LEARN',
+    readingTime: '5 min read',
+    featured: true,
+    quotations: true,
+    difficulty: 'Intermediate',
+    lastUpdated: '2026-07-11',
+    thumbnail: '/images/essay-placeholder.svg',
+    pdf: 'downloads/my-first-day-at-school.pdf',
+    keywords: ['first day at school', 'school life', 'student', 'education']
+},
+{
+    id: 15,
+    title: 'A Road Accident Essay',
+    slug: 'road-accident',
+    category: 'Essays',
+    description: 'A descriptive essay highlighting the causes, consequences, and preventive measures related to road accidents while emphasizing the importance of traffic safety.',
+    author: 'AIM TO LEARN',
+    readingTime: '5 min read',
+    featured: true,
+    quotations: true,
+    difficulty: 'Intermediate',
+    lastUpdated: '2026-07-11',
+    thumbnail: '/images/essay-placeholder.svg',
+    pdf: 'downloads/a-road-accident.pdf',
+    keywords: ['road accident', 'traffic safety', 'road safety', 'accident']
 }
 ];
