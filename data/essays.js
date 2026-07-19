@@ -238,5 +238,21 @@ const essaysData = [
     thumbnail: '/images/essay-placeholder.svg',
     pdf: 'downloads/a-road-accident.pdf',
     keywords: ['road accident', 'traffic safety', 'road safety', 'accident']
+},
+{
+    id: 16,
+    title: 'A Scene at Railway Station Essay',
+    slug: 'railway-station',
+    category: 'Essays',
+    description: 'A vivid essay describing the hustle and bustle, passengers, vendors, and memorable experiences at a busy railway station.',
+    author: 'AIM TO LEARN',
+    readingTime: '5 min read',
+    featured: true,
+    quotations: true,
+    difficulty: 'Intermediate',
+    lastUpdated: '2026-07-11',
+    thumbnail: '/images/essay-placeholder.svg',
+    pdf: 'downloads/scene-at-railway.pdf',
+    keywords: ['railway station', 'train station', 'travel', 'passengers']
 }
 ];
