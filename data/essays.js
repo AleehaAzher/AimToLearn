@@ -254,5 +254,21 @@ const essaysData = [
     thumbnail: '/images/essay-placeholder.svg',
     pdf: 'downloads/scene-at-railway.pdf',
     keywords: ['railway station', 'train station', 'travel', 'passengers']
+},
+{
+    id: 17,
+    title: 'Allama Iqbal Essay',
+    slug: 'allama-iqbal',
+    category: 'Essays',
+    description: 'An insightful essay exploring the life, works, and legacy of Allama Iqbal, the renowned poet and philosopher.',
+    author: 'AIM TO LEARN',
+    readingTime: '5 min read',
+    featured: true,
+    quotations: true,
+    difficulty: 'Intermediate',
+    lastUpdated: '2026-07-11',
+    thumbnail: '/images/essay-placeholder.svg',
+    pdf: 'downloads/allama-iqbal.pdf',
+    keywords: ['Allama Iqbal', 'poet', 'thinker', 'Pakistan']
 }
 ];
